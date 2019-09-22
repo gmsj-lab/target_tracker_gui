@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Concept1.xhtml</title>
+  <link rel="stylesheet" href="shared.css" type="text/css" />	
+  </head>
+
+<body>
+<h1>Welcome to Target Tracker Product</h1>
+<h4>Target Tracker</h4>
+<p>Target Tracker est constitue d'une librairie C++ Arduino et d'une interface java/eclipse disponible sur mac, windows et linux, en version 32 et 64 bits. Le protocole ascii utilise sur liaison serie permet au logiciel applicatif sur la cible de declarer des attributs de type:</p>
+<p>     -      booleen, </p>
+<p>     -      entier non signes sur 8 bits, </p>
+<p>     -      entier non signes sur 10 bits (0-1024, adapte pour representer des valeurs de CAN),</p>
+<p>     -      entiers signes sur 16 bits.</p>
+<p>Ces attributs peuvent etre declares avec les types prevus (TT_bool, TT_uint8, TT_uint10, TT_uint16, TT_int mais peuvent etre des variable utilisateur existante qui doivent alors etre declares par reference a targetTracker</p>
+<p>	Un fois enregistres a TargetTracker ( tracker.add ( attribut ) ), toute modification de l'attribut par le logiciel embarque sera transmise au logiciel hote. A l'inverse, une modification par l'hote sera transmis a la cible et peut declencher l'appel de code applicatif si besoin.</p>
+<p>A chaque attribut l'application cible peut donner:</p>
+<p>     -      un nom, utilise par la GUI qui decouvre les attributs lors de la connexion a la cible</p>
+<p>     -      une categorie, utilisee par le navigateur de la GUI pour grouper les attributs</p>
+<p>     -      une priorite, haute ou basse (defaut basse) qui sert a TargetTracker de ne traiter que les urgences si le nombre d'attributs modifies entre deux appels de "tracker.process()" est trop important (le tracker donne en retour l'information qu'il n'a pas envoyes tous les attributs modifies </p>
+<p>     -      des droits en lecture seule ou lecture/ecriture</p>
+<p>     -      une routine de callback en cas de modification par la GUI hote</p>
+<p>Target Tracker n'envoie que les attributs qui ont effectivement change de valeur depuis le dernier envoi. l'application cible doit s'assurer de faire un appel a tracker.process() a une frequence suffisante pour que les changements soit percus rapidement. Si cette frequence est trop rapide pour la vitesse de la liaison, Target Tracker n'envoi pas le nouveau changement tout de suite. </p>
+<p>Le Tracker cible est concu pour etre rapide si le nombre d'attributs est important: aucun parcours de liste sur tous les attributs</p>
+</body>
+</html>

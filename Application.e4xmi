@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_6I3FwAxuEearPv1RPDxerA" elementId="org.eclipse.e4.ide.application" bindingContexts="_6I3FyQxuEearPv1RPDxerA">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_6I3FwQxuEearPv1RPDxerA" elementId="gmsj.robotics.tracker.maintrimmedwindow" label="Target Tracker" tooltip="Main window of the tracker" x="50" y="50" width="1400" height="700">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_6I3F4AxuEearPv1RPDxerA" elementId="gmsj.tracker.perspectivestack">
+      <children xsi:type="advanced:Perspective" xmi:id="_6I3F4QxuEearPv1RPDxerA" elementId="gmsj.robotics.tracker.setupperspective" label="Setup" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/savePerspective.png" tooltip="This perspective allows you to build your tracker">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_6I3F4gxuEearPv1RPDxerA" elementId="gmsj.robotics.tracker.setupperspective.partsashcontainer.1" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_Hgr64BHzEeaCbMQDMeWj9w" elementId="gmsj.robotics.tracker.setupperspective.partsashcontainer.1.1" containerData="1450">
+            <children xsi:type="basic:PartStack" xmi:id="_3kttQA5LEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.setupperspective.targetnavigationpartstack" containerData="7000">
+              <children xsi:type="basic:Part" xmi:id="_TH9_8Ax1EearPv1RPDxerA" elementId="gmsj.robotics.tracker.setupperspective.targetnavigationpartstack.targetnavigationpart" containerData="" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.parts.TargetNavigationPart" label="Attributes" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/target.png" tooltip="Dispalys all targets with discovered attributes" closeable="true">
+                <menus xsi:type="menu:PopupMenu" xmi:id="_wYFuAH1mEeatDuL2ds0T_g" elementId="gmsj.robotics.tracker.popupmenu.targetmenu" label="Target menu" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/work.png">
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="_HEP4sH1uEeatDuL2ds0T_g" elementId="gmsj.robotics.tracker.handledmenuitem.discover" label="Discover" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/reset.png" tooltip="Send a discovery message to the target" command="_PVYocH1uEeatDuL2ds0T_g"/>
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="__N5LwKKhEeadG9rUZSC0ow" elementId="gmsj.robotics.tracker.handledmenuitem.downloadtarget" label="downloadTarget" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/download16.png" command="_mdHPMKKgEeadG9rUZSC0ow"/>
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="_Iju8wIU1EeaMzusOVO7A6A" elementId="gmsj.robotics.tracker.handledmenuitem.closetarget" label="closeTarget" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/delete.png" command="_-akbQBOwEea9VqEF1PewGw">
+                    <parameters xmi:id="_UTB1cIU1EeaMzusOVO7A6A" elementId="gmsj.robotics.tracker.parameter.targetName" name="gmsj.robotics.tracker.commandparameter.targetName" value="&quot;selection&quot;"/>
+                  </children>
+                </menus>
+              </children>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_ODb2MBHzEeaCbMQDMeWj9w" elementId="gmsj.robotics.tracker.setupperspective.displayoverviewpartstack" containerData="3000">
+              <children xsi:type="basic:Part" xmi:id="_87wlwA-QEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.setupperspective.displayoverviewpartstack.displayoverviewpart" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.parts.DisplayOverviewPart" label="Display Overview" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/control.png" tooltip="Supervision of the active display configuration" closeable="true">
+                <menus xsi:type="menu:PopupMenu" xmi:id="_96DPgCTEEeameMBnXmFGjg" elementId="gmsj.robotics.tracker.popupmenu.overviewremovewidget" label="Delete" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/delete.png">
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="_G7Z7QCTFEeameMBnXmFGjg" elementId="gmsj.robotics.tracker.handledmenuitem.overviewremovewidget" label="Delete" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/delete.png" tooltip="Remove widget from Display" command="_zGG2sCTCEeameMBnXmFGjg"/>
+                </menus>
+              </children>
+            </children>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_cEMpMAx3EearPv1RPDxerA" elementId="gmsj.robotics.tracker.setupperspective.partsashcontainer.1.2" containerData="8550" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_nAWNsAx3EearPv1RPDxerA" elementId="gmsj.robotics.tracker.setupperspective.partsashcontainer.1.2.1" containerData="9000">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_N31xcBN4Eeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.setupperspective.partsashcontainer.1.2.1.1">
+                <children xsi:type="basic:PartStack" xmi:id="_dxP18BN_Eeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.setupperspective.displayviewspartstack">
+                  <children xsi:type="basic:Part" xmi:id="_ST37AB4EEeaa6_CIonYiTg" elementId="gmsj.robotics.tracker.part.0"/>
+                </children>
+                <children xsi:type="basic:PartStack" xmi:id="_zPd18Ax3EearPv1RPDxerA" elementId="gmsj.robotics.tracker.setupperspective.consolepartstack" containerData="3000" accessibilityPhrase="">
+                  <children xsi:type="basic:Part" xmi:id="_REGN4BN_Eeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.setupperspective.consoleviewspartstack.consolepart" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.parts.ConsolePart" label="Console Part" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/consolesmall.png" closeable="true">
+                    <toolbar xmi:id="_9WoA4BOCEeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.toolbar.0">
+                      <children xsi:type="menu:HandledToolItem" xmi:id="_Kp9fMBODEeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.handledtoolitem.timetag" label="timetag" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/clock.png" type="Check" command="_-W1eoA0JEeaISPNGC9OxDw"/>
+                      <children xsi:type="menu:HandledToolItem" xmi:id="_-eZhQBOCEeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.handledtoolitem.sticktoend" label="sticktoend" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/sticktobottom.png" tooltip="Let the console stick to last entries" type="Check" command="_MH-jcAx_EearPv1RPDxerA"/>
+                      <children xsi:type="menu:ToolBarSeparator" xmi:id="_Jti6QBODEeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.toolbarseparator.2"/>
+                      <children xsi:type="menu:HandledToolItem" xmi:id="_G38wsBOEEeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.handledtoolitem.consolefilter" label="consolefilter" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/filter.png" command="_e3scwA-yEeaU6bnBFtfGoA"/>
+                    </toolbar>
+                  </children>
+                  <children xsi:type="basic:Part" xmi:id="_NW-kkA-dEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.setupperspective.consoleviewspartstack.preferencespart" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.parts.PreferencePart" label="Preferences" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/zoom.png" tooltip="configuration of preferences" closeable="true"/>
+                </children>
+              </children>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_4Hv0cA-hEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.setupperspective.partsashcontainer.1.2.2" containerData="1800">
+              <children xsi:type="basic:PartStack" xmi:id="_vkOewA-iEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.setupperspective.widgetnavigationpartstack" containerData="7000">
+                <children xsi:type="basic:Part" xmi:id="_JBpI0Ax4EearPv1RPDxerA" elementId="gmsj.robotics.tracker.setupperspective.widgetnavigationpartstack.widgetnavigationpart" containerData="" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.parts.WidgetNavigationPart" label="Widgets" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/speedometer2.png" tooltip="Displays all available widgets to be dragged on displays" closeable="true"/>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_OU4TEA-kEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.setupperspective.widgetpreviewpartstack" containerData="3000">
+                <children xsi:type="basic:Part" xmi:id="__SmcIA-iEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.setupperspective.widgetpreviewpartstack.widgetpreviewpart" containerData="" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.parts.WidgetPreviewPart" label="Widget preview" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/camera.png" tooltip="Displays an example of the selected widget" closeable="true"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_E-3-UAx1EearPv1RPDxerA" elementId="gmsj.robotics.tracker.displayperspective" label="Tracker Display" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/savePerspective.png" tooltip="This perspective allows you to display your tracker"/>
+    </children>
+    <mainMenu xmi:id="_6I3F2QxuEearPv1RPDxerA" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_6I3F2gxuEearPv1RPDxerA" elementId="gmsj.robotics.tracker.menu.file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6I3F2wxuEearPv1RPDxerA" label="Open" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/sample.png" command="_6I3F0AxuEearPv1RPDxerA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6I3F3AxuEearPv1RPDxerA" label="Save" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/save_edit.png" command="_6I3F0wxuEearPv1RPDxerA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6I3F3QxuEearPv1RPDxerA" label="Quit" command="_6I3FzAxuEearPv1RPDxerA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_OLD2gAx0EearPv1RPDxerA" elementId="gmsj.robotics.tracker.menu.views" label="Views">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ppIIgBLzEeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.handledmenuitem.switchpersperctive" label="switch persperctive" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/switchPerspective.png" command="_f8z0MBLzEeaue6coSUh1kQ"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_tki1MBLzEeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_976N8A5NEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handledmenuitem.opennavigationview" label="Open Navigation View" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/target.png" tooltip="Opens the target navigation view" command="_N4IPgA5NEearV8ZKjjfquw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_j7Uz4A-gEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handledmenuitem.openwidgetnavigationview" label="Open Widget Navigation View" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/speedometer2.png" tooltip="Opens the widget navigation view" command="_o8RlQA-gEeaU6bnBFtfGoA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_YZpKYAx0EearPv1RPDxerA" elementId="gmsj.robotics.tracker.handledmenuitem.openconsole" label="Open Console" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/console.png" mnemonics="&amp;C" command="_iztyAAxzEearPv1RPDxerA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_FOHBAA-SEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handledmenuitem.opendisplayoverview" label="Open Display Overview" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/control.png" tooltip="Open the view that supervise configuration of active display" command="_6cLIcA-REeaU6bnBFtfGoA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Do6uYA-eEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handledmenuitem.openpreferences" label="Open Preferences" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/zoom.png" tooltip="Open the view that supervise configuration" command="_Tv_VEA-dEeaU6bnBFtfGoA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_cxieIA4pEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handledmenuitem.opendisplay" label="Open Display" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/display.png" tooltip="Opens a new display" command="_ov1HAA4nEearV8ZKjjfquw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_NCOIUA6nEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.menu.targets" label="Targets">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_XYNrwA6nEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handledmenuitem.openserialconnection" label="Open Serial connection" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/usbSymbol.png" command="_lwLFQA6mEearV8ZKjjfquw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mqY1UA6nEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handledmenuitem.openudpconnection" label="Open Udp Connection" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/wifi2.png" command="_uiG08A6mEearV8ZKjjfquw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_qKUYIIYBEeaMzusOVO7A6A" elementId="gmsj.robotics.tracker.handledmenuitem.bluetooth" label="bluetooth" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/Bluetooth.png" command="_MYqJ4ITHEeaMzusOVO7A6A"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_-jr7sKKiEeadG9rUZSC0ow" elementId="gmsj.robotics.tracker.handledmenuitem.downloadtarget" label="Download Target" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/download16.png" command="_mdHPMKKgEeadG9rUZSC0ow"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_dlgpUBQqEea9VqEF1PewGw" elementId="gmsj.robotics.tracker.handledmenuitem.closetarget" label="Close Target" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/target.png" command="_-akbQBOwEea9VqEF1PewGw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_6I3F3gxuEearPv1RPDxerA" elementId="gmsj.robotics.tracker.menu.help" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6I3F3wxuEearPv1RPDxerA" label="About" command="_6I3F1gxuEearPv1RPDxerA"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_6I3F5QxuEearPv1RPDxerA">
+      <children xsi:type="menu:ToolBar" xmi:id="_6I3F5gxuEearPv1RPDxerA" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6I3F5wxuEearPv1RPDxerA" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/sample.png" command="_6I3F0AxuEearPv1RPDxerA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6I3F6AxuEearPv1RPDxerA" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/save_edit.png" command="_6I3F0wxuEearPv1RPDxerA"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_v-W7EA6nEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.toolbarseparator.0"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_QjnI4A5OEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handledtoolitem.opentargetnavigationview" label="Open navigation view" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/target.png" tooltip="Opens the navigation views for target attributes" command="_N4IPgA5NEearV8ZKjjfquw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_gOe5QA-hEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handledtoolitem.openwidgetnavigationview" label="Open Widget Navigation View" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/speedometer2.png" tooltip="Opens the widget navigation view" command="_o8RlQA-gEeaU6bnBFtfGoA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_2d0EcAx7EearPv1RPDxerA" elementId="gmsj.robotics.tracker.handledtoolitem.openconsole" label="Open Console" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/console.png" tooltip="Opens a target console" command="_iztyAAxzEearPv1RPDxerA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_flztgA-SEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handledtoolitem.opendisplayoverview" label="Open Display Overview" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/control.png" tooltip="Open the view that supervise configuration of active display" command="_6cLIcA-REeaU6bnBFtfGoA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_J_D7oA-fEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handledtoolitem.openpreferences" label="Open Preferences" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/zoom.png" tooltip="Open the view that supervise configuration of preferences" command="_Tv_VEA-dEeaU6bnBFtfGoA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_exA1AA5JEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handledtoolitem.opendisplay" label="Open Display" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/display.png" tooltip="Opens a new display" command="_ov1HAA4nEearV8ZKjjfquw"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_Lfgi8A6oEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.toolbarseparator.1"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_4Th2QA6nEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handledtoolitem.openserialconnection" label="Open Serial connection" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/usbSymbol.png" command="_lwLFQA6mEearV8ZKjjfquw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Ad1lQA6oEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handledtoolitem.openudpconnection" label="Open Udp Connection" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/wifi2.png" command="_uiG08A6mEearV8ZKjjfquw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_9wHMIITGEeaMzusOVO7A6A" elementId="gmsj.robotics.tracker.handledtoolitem.openbluetoothconnection" label="Open Bluetooth Connection" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/Bluetooth.png" command="_MYqJ4ITHEeaMzusOVO7A6A"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_6I3FzQxuEearPv1RPDxerA" elementId="gmsj.robotics.tracker.handler.quitCommand" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.QuitHandler" command="_6I3FzAxuEearPv1RPDxerA"/>
+  <handlers xmi:id="_6I3F0QxuEearPv1RPDxerA" elementId="gmsj.robotics.tracker.handler.openCommand" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.OpenHandler" command="_6I3F0AxuEearPv1RPDxerA"/>
+  <handlers xmi:id="_6I3F1AxuEearPv1RPDxerA" elementId="gmsj.robotics.tracker.handler.saveCommand" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.SaveHandler" command="_6I3F0wxuEearPv1RPDxerA"/>
+  <handlers xmi:id="_6I3F1wxuEearPv1RPDxerA" elementId="gmsj.robotics.tracker.handler.aboutCommand" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.AboutHandler" command="_6I3F1gxuEearPv1RPDxerA"/>
+  <handlers xmi:id="_SB3FwAxwEearPv1RPDxerA" elementId="gmsj.robotics.tracker.handler.openconsole" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.OpenConsoleHandler" command="_iztyAAxzEearPv1RPDxerA"/>
+  <handlers xmi:id="_cIEi8Ax_EearPv1RPDxerA" elementId="gmsj.robotics.tracker.handler.sticktoend" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.StickToEndHandler" command="_MH-jcAx_EearPv1RPDxerA"/>
+  <handlers xmi:id="_aNfccA0KEeaISPNGC9OxDw" elementId="gmsj.robotics.tracker.handler.timetag" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.TimeTagHandler" command="_-W1eoA0JEeaISPNGC9OxDw"/>
+  <handlers xmi:id="_NgP60A4oEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handler.opendisplayview" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.OpenDisplayViewHandler" command="_ov1HAA4nEearV8ZKjjfquw"/>
+  <handlers xmi:id="_Tz31MA5NEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handler.opentargetnavigationview" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.OpenTargetNavigationViewHandler" command="_N4IPgA5NEearV8ZKjjfquw"/>
+  <handlers xmi:id="_yqqlwA6mEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handler.openserialconnection" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.OpenSerialConnectionHandler" command="_lwLFQA6mEearV8ZKjjfquw"/>
+  <handlers xmi:id="_ACx2YA6nEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.handler.openudpconnection" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.OpenUdpConnectionHandler" command="_uiG08A6mEearV8ZKjjfquw"/>
+  <handlers xmi:id="_9OzoIA-REeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handler.opendisplayoverview" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.OpenDisplayOverviewHandler" command="_6cLIcA-REeaU6bnBFtfGoA"/>
+  <handlers xmi:id="_Y2GTQA-dEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handler.openpreferences" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.OpenPreferencesHandler" command="_Tv_VEA-dEeaU6bnBFtfGoA"/>
+  <handlers xmi:id="_uQWG8A-gEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handler.openwidgetnavigationview" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.OpenWidgetNavigationViewHandler" command="_o8RlQA-gEeaU6bnBFtfGoA"/>
+  <handlers xmi:id="_ntR9YA-yEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handler.consolefilter" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.ConsoleFilterHandler" command="_e3scwA-yEeaU6bnBFtfGoA"/>
+  <handlers xmi:id="_rmAJ4BBLEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handler.horizontalorientation" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.HorizontalDisplayOrientationHandler" command="_oNyQ4BBLEeaU6bnBFtfGoA"/>
+  <handlers xmi:id="_iq5yIBLzEeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.handler.switchpersperctive" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.SwitchPerspectiveHandler" command="_f8z0MBLzEeaue6coSUh1kQ"/>
+  <handlers xmi:id="_C5kWIBOxEea9VqEF1PewGw" elementId="gmsj.robotics.tracker.handler.0" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.CloseTargetHandler" command="_-akbQBOwEea9VqEF1PewGw"/>
+  <handlers xmi:id="__qIjEBj9Eea1u4chreHs0g" elementId="gmsj.robotics.tracker.handler.verticalorientation" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.VerticalDisplayOrientationHandler" command="_792ekBj9Eea1u4chreHs0g"/>
+  <handlers xmi:id="_3YPaQCTCEeameMBnXmFGjg" elementId="gmsj.robotics.tracker.handler.removewidget" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.RemoveWidgetHandler" command="_zGG2sCTCEeameMBnXmFGjg"/>
+  <handlers xmi:id="_UPIloH1uEeatDuL2ds0T_g" elementId="gmsj.robotics.tracker.handler.discover" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.DiscoverHandler" command="_PVYocH1uEeatDuL2ds0T_g"/>
+  <handlers xmi:id="_DRfUkITIEeaMzusOVO7A6A" elementId="gmsj.robotics.tracker.handler.openbluetoothconnection" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.OpenBluetoothConnectionHandler" command="_MYqJ4ITHEeaMzusOVO7A6A"/>
+  <handlers xmi:id="_AiF0AKKhEeadG9rUZSC0ow" elementId="gmsj.robotics.tracker.handler.1" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.handlers.DownloadTargetHandler" command="_mdHPMKKgEeadG9rUZSC0ow"/>
+  <bindingTables xmi:id="_6I3FzgxuEearPv1RPDxerA" bindingContext="_6I3FyQxuEearPv1RPDxerA">
+    <bindings xmi:id="_6I3FzwxuEearPv1RPDxerA" keySequence="M1+Q" command="_6I3FzAxuEearPv1RPDxerA"/>
+    <bindings xmi:id="_6I3F0gxuEearPv1RPDxerA" keySequence="M1+O" command="_6I3F0AxuEearPv1RPDxerA"/>
+    <bindings xmi:id="_6I3F1QxuEearPv1RPDxerA" keySequence="M1+S" command="_6I3F0wxuEearPv1RPDxerA"/>
+    <bindings xmi:id="_6I3F2AxuEearPv1RPDxerA" keySequence="M1+A" command="_6I3F1gxuEearPv1RPDxerA"/>
+  </bindingTables>
+  <rootContext xmi:id="_6I3FyQxuEearPv1RPDxerA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_6I3FygxuEearPv1RPDxerA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_6I3FywxuEearPv1RPDxerA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <descriptors xmi:id="_LT-hcA4xEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.displaypartdescriptor" label="Display" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/monitorsmall.png" allowMultiple="true" closeable="true" dirtyable="true" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.parts.DisplayViewPart">
+    <menus xsi:type="menu:PopupMenu" xmi:id="_14JLYCTAEeameMBnXmFGjg" elementId="gmsj.robotics.tracker.popupmenu.deletewidget" label="delete" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/delete.png" tooltip="remove widget from the display">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_vkIkwCTCEeameMBnXmFGjg" elementId="gmsj.robotics.tracker.handledmenuitem.removewidget" label="Delete" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/delete.png" tooltip="Remove widget from Display" command="_zGG2sCTCEeameMBnXmFGjg"/>
+    </menus>
+    <toolbar xmi:id="_aABDQBBOEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.partdescriptor.displaypart.toolbar">
+      <children xsi:type="menu:HandledToolItem" xmi:id="_OVKWIBL1Eeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.handledtoolitem.switchperspective" label="Switch perspective" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/switchPerspectivesmall.png" tooltip="Switch from setup to display perspective" command="_f8z0MBLzEeaue6coSUh1kQ"/>
+      <children xsi:type="menu:HandledToolItem" xmi:id="_bU8QwBNtEeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.handledtoolitem.openconsole" label="openconsole" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/consolesmall.png" command="_iztyAAxzEearPv1RPDxerA"/>
+      <children xsi:type="menu:ToolBarSeparator" xmi:id="_PBwWYBL1Eeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.toolbarseparator.3"/>
+      <children xsi:type="menu:HandledToolItem" xmi:id="_bNvaoBBOEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handledtoolitem.verticaldisplayorientation" label="Vertical Display Orientation" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/verticalsmall.png" tooltip="Organize widgets within active display vertically" selected="true" type="Radio" command="_792ekBj9Eea1u4chreHs0g"/>
+      <children xsi:type="menu:HandledToolItem" xmi:id="_pzgxMBBOEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.handledtoolitem.horizontaldisplayorientation" label="Horizontal Display Orientation" iconURI="platform:/plugin/gmsj.robotics.tracker/icons/horizontalsmall.png" tooltip="Organize widgets within active display horizontally" type="Radio" command="_oNyQ4BBLEeaU6bnBFtfGoA"/>
+    </toolbar>
+  </descriptors>
+  <commands xmi:id="_6I3FzAxuEearPv1RPDxerA" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_6I3F0AxuEearPv1RPDxerA" elementId="gmsj.robotics.tracker.open" commandName="openCommand"/>
+  <commands xmi:id="_6I3F0wxuEearPv1RPDxerA" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_6I3F1gxuEearPv1RPDxerA" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_iztyAAxzEearPv1RPDxerA" elementId="gmsj.robotics.tracker.command.openconsole" commandName="Open Console" description="Open a target console"/>
+  <commands xmi:id="_MH-jcAx_EearPv1RPDxerA" elementId="gmsj.robotics.tracker.command.sticktoend" commandName="stick to end" description="Make the display stick to last entries of the console"/>
+  <commands xmi:id="_-W1eoA0JEeaISPNGC9OxDw" elementId="gmsj.robotics.tracker.command.timetag" commandName="Time tag" description=""/>
+  <commands xmi:id="_ov1HAA4nEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.command.opendisplayview" commandName="Open Display View"/>
+  <commands xmi:id="_N4IPgA5NEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.command.opentargetnavigationview" commandName="Open Target Navigation View"/>
+  <commands xmi:id="_lwLFQA6mEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.command.openserialconnection" commandName="Open Serial connection"/>
+  <commands xmi:id="_uiG08A6mEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.command.openudpconnection" commandName="Open UDP connection"/>
+  <commands xmi:id="_6cLIcA-REeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.command.opendisplayoverview" commandName="Open Display Overview"/>
+  <commands xmi:id="_Tv_VEA-dEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.command.openpreferences" commandName="Open Preferences"/>
+  <commands xmi:id="_o8RlQA-gEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.command.openwidgetnavigationview" commandName="Open Widget Navigation View"/>
+  <commands xmi:id="_e3scwA-yEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.command.consolefilter" commandName="Console Filter"/>
+  <commands xmi:id="_oNyQ4BBLEeaU6bnBFtfGoA" elementId="gmsj.robotics.tracker.command.horizontalorientation" commandName="Horizontal Orientation"/>
+  <commands xmi:id="_f8z0MBLzEeaue6coSUh1kQ" elementId="gmsj.robotics.tracker.command.switchpersperctive" commandName="Switch persperctive"/>
+  <commands xmi:id="_-akbQBOwEea9VqEF1PewGw" elementId="gmsj.robotics.tracker.command.closetarget" commandName="Close Target">
+    <parameters xmi:id="_bKDR8BPGEea9VqEF1PewGw" elementId="gmsj.robotics.tracker.commandparameter.targetName" name="targetName"/>
+  </commands>
+  <commands xmi:id="_792ekBj9Eea1u4chreHs0g" elementId="gmsj.robotics.tracker.command.verticalorientation" commandName="Vertical Orientation"/>
+  <commands xmi:id="_zGG2sCTCEeameMBnXmFGjg" elementId="gmsj.robotics.tracker.command.removewidget" commandName="RemoveWidget"/>
+  <commands xmi:id="_PVYocH1uEeatDuL2ds0T_g" elementId="gmsj.robotics.tracker.command.discover" commandName="Discover"/>
+  <commands xmi:id="_MYqJ4ITHEeaMzusOVO7A6A" elementId="gmsj.robotics.tracker.command.openbluetoothconnection" commandName="Open Bluetooth Connection"/>
+  <commands xmi:id="_mdHPMKKgEeadG9rUZSC0ow" elementId="gmsj.robotics.tracker.command.Downloadtarget" commandName="DownloadTarget">
+    <parameters xmi:id="_rVONoKKgEeadG9rUZSC0ow" elementId="gmsj.robotics.tracker.commandparameter.targetName" name="targetName"/>
+  </commands>
+  <addons xmi:id="_6I3FwgxuEearPv1RPDxerA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_6I3FwwxuEearPv1RPDxerA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_6I3FxAxuEearPv1RPDxerA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_6I3FxQxuEearPv1RPDxerA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_6I3FxgxuEearPv1RPDxerA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_6I3FxwxuEearPv1RPDxerA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_6I3FyAxuEearPv1RPDxerA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_mUkroA7OEearV8ZKjjfquw" elementId="gmsj.robotics.tracker.addon.controler" contributionURI="bundleclass://gmsj.robotics.tracker/gmsj.robotics.tracker.controler.Controler"/>
+</application:Application>

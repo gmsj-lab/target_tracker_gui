@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Concept2.xhtml</title>
+  <link rel="stylesheet" href="shared.css" type="text/css" />
+  </head>
+
+<body>
+<h1>Welcome to Target Tracker Product</h1>
+<h4>Concept Two</h4>
+<p>/* 
+ * 						TARGET TRACKER PROTOCOL
+ *		GENERAL DEFINITIONS
+ *			SOM ( START OF MESSAGE ) 	:  ASCII CHAR '#'
+ *			EOM ( END OF MESSAGE ) 	 	:  ASCII CHAR '@'
+ *			VALUE_SEPARATOR				:  ASCII CHAR ','
+ *			ATTRIBUTES_SEPARATOR		:  ASCII CHAR '.'
+ *			TARGET_NAME_SEPARATOR		:  ASCII CHAR '$'
+ *			MULTI_ATTRIBUTE_SEPARATOR	:  ASCII CHAR ':'
+ *			ATT_TYPE_SEPARATOR			:  ASCII CHAR '%'
+ *			TARGET_NAME_SEPARATOR		:  ASCII CHAR '$'
+ *			
+ * 		HOST TO TARGET MESSAGES:
+ * 		
+ * 			1) DISCOVERY REQUEST MESSAGE
+ * 	 				
+ * 			2) UPDATE MESSAGE		
+ *				
+ * 				target id	 			::= 1 char, correspond to the target id (without the name) given in the discovery message. 
+ * 				attribute id 			::= multi char, correspond to the position of the attribute in the discovery message, starting at id = 0.
+ * 				attribute value			::= value in ascii (every char in [0-9], space allowed).
+ * 				
+ * 			3) CHANGE_RATE MESSAGE
+ * 			
+ * 				
+ * 				rate 				::= "9600", "19200"..
+ * 				
+ * 			4) RESET MESSAGE
+ * 			  				 				 				
+ * 		TARGET TO HOST
+ * 		
+ * 			1) DISCOVERY MESSAGE
+ * 			
+ * 				
+ * 				target id				::= 1 char in range {0-9}.  THIS VERSION (MONO TARGET) : fixed to zero
+ * 				target name				::= ascii chars, immediatly following the target id
+ * 				attributeType         	::= %[B|I|S|C|R|W]* 
+ * 				
+ * 			2) UPDATE MESSAGE		
+ * 			
+ * 				target id	 			::= 1 char, correspond to the target id (without the name) given in the discovery message. 
+ * 				attribute id 			::= multi char, correspond to the position of the attribute in the discovery message, starting at id = 0.
+ * 				attribute value			::= value in ascii (every char in [0-9], space allowed).
+ * 				
+ * 				
+ *  */</p>
+</body>
+</html>
